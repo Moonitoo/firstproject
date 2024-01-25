@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="UTF-8">
+        <title>Publicidad A Medida Survey Form</title>
+    </head>
+    <body>
+        <h1 id="title">Publicidad A Medida Survey Form</h1>
+        <p id="description">Thank you for taking the time to fill this form so we can improve our platform and services</p>
+        <form id="survey-form" method="post" action="publicidadamedida.com">
+            <fieldset>
+                <legend>Personal Data</legend>
+                <label for="name" id="name-label">Name <input id="name" type="text" required placeholder="Ex. Owen Smith"> </label>
+                <label for="email" id="email-label">Email <input id="email" type="email" required placeholder="Ex. myemail@server.com"> </label>
+                <label for="number" id="number-label">Your telephone number <input id="number" type="number" min="1111111111" max="99999999999999" placeholder="Ex. 541133595685"> </label>
+            </fieldset>
+            <fieldset>
+                <legend>Your interaction with Publicidad A Medida</legend>
+                <label id="label-referrer" for="referrer">How did you hear about us?        
+                    <select id="dropdown" name="referrer">
+                        <option value="">(select one)</option>
+                        <option value="1">Google Ads</option>
+                        <option value="2">Publicidad A Medida's Client</option>
+                        <option value="3">Social Media</option>
+                        <option value="4">Other</option>
+                    </select>
+                    <legend>Would you recommend Publicidad A Medida to a friend?</legend>
+                    <label for="definetly"><input id="definetly" type="radio" name="would-recommend" class="inline" value="definetly" checked /> Definetly</label>
+                    <label for="maybe"><input id="maybe" type="radio" name="would-recommend" class="inline" value="maybe" /> Maybe</label>
+                    <label for="not-sure"><input id="not-sure" type="radio" name="would-recommend" class="inline" value="not-sure" /> Not sure</label>
+
+<legend>Which service did you get?</legend>
+<label>
+<input class="inline" name="service" value="google-ads" type="checkbox"> Google Ads
+</label>
+<label>
+<input class="inline"  name="service" value="meta-ads" type="checkbox"> Meta Ads
+</label>
+<label>
+<input class="inline"  name="service" value="web-design" type="checkbox"> Web Design
+</label>
+<label>
+<input class="inline"  name="service" value="community" type="checkbox"> Community Management
+</label>
+
+<label for="comments" id="label-comments"> Comments <textarea id="comments" name="comments" rows="5" cols="40" placeholder="I think Publicidad A Medida..."></textarea>                           
+                    </label>            
+            </fieldset>
+            <label for="terms-and-conditions">
+                <input class="inline" id="terms-and-conditions" type="checkbox"
+                value="accepted" required name="terms-and-conditions" /> I accept the <a href="https://publicidadamedida.com/">terms and conditions</a>
+              </label>
+              <input id="submit" type="submit" value="Submit" />
+        </form>
+    </body>
+</html>
